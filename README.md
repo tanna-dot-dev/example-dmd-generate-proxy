@@ -3,7 +3,7 @@
 An example implementation of a caching proxy for HTTP traffic for the [dependency-management-data](https://dmd.tanna.dev) project.
 
 > [!NOTE]
-> This is [not yet](https://gitlab.com/tanna.dev/dependency-management-data/-/merge_requests/263) fully supported in dependency-management-data.
+> This is [not yet](https://gitlab.com/tanna.dev/dependency-management-data/-/merge_requests/263) fully supported in dependency-management-data, but the intent is that when performing enrichment of the database, for instance with [`dmd db generate dependency-health`](https://dmd.tanna.dev/commands/dmd_db_generate_dependency-health/), it will proxy external requests through this service, caching URLs we've seen before, to reduce load on external systems and improve performance.
 
 > [!IMPORTANT]
 > This is very much a work in progress, hacky, and not-quite-ready-for-real-usage solution, worked on during [Encore's Launch Week](https://encore.dev/launchweek).
